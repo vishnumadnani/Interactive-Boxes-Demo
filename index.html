@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KombatLink Tournament</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/css/select2.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.1.0-beta.1/js/select2.min.js"></script>
+</head>
+<style>
+  .select2-container--default .select2-selection--single {
+    background-color: #2c3e50;
+    border: 1px solid #34495e;
+    color: #ecf0f1;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #ecf0f1;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #bdc3c7;
+  }
+
+  .select2-container--default .select2-search--dropdown .select2-search__field {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+  }
+
+  .select2-dropdown {
+    background-color: #2c3e50;
+    border-color: #34495e;
+  }
+
+  .select2-results__option {
+    color: #ecf0f1;
+  }
+
+  .select2-results__option--highlighted {
+    background-color: #34495e;
+  }
+</style>
+
+<body>
+  <header class="headerCard card-header">
+    <h1>Custom Tournament</h1>
+    <p>Make Your Own Tournament Bracket Online</p>
+  </header>
+
+  <div class="container mt-4">
+    <div class="row mb-3">
+      <div class="col">
+        <label for="organizer" class="form-label text-white">Organizer</label>
+        <select id="organizer" style="width: 200px;" class="form-select">
+          <option value="">All</option>
+          <option value="deskills">Deskills</option>
+          <option value="dgame-era">Dgame Era</option>
+          <option value="dgame-era-2">Dgaming Era</option>
+          <option value="dimela-gaming">DimeLA Gaming</option>
+          <option value="doki">Doki</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="consoles" class="form-label text-white">Consoles</label>
+        <select id="consoles" class="form-select">
+          <option value="">All</option>
+          <option value="ps5">PlayStation 5</option>
+          <option value="ps4">PlayStation 4</option>
+          <option value="xbox-series-x">Xbox Series X</option>
+          <option value="xbox-one">Xbox One</option>
+          <option value="switch">Nintendo Switch</option>
+          <option value="pc">PC</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="game" class="form-label text-white">Game</label>
+        <select id="game" class="form-select">
+          <option value="">All</option>
+          <option value="valorant">Valorant</option>
+          <option value="fifa">FIFA</option>
+          <option value="call-of-duty">Call of Duty</option>
+          <option value="fortnite">Fortnite</option>
+          <option value="apex-legends">Apex Legends</option>
+          <option value="league-of-legends">League of Legends</option>
+          <option value="dota-2">Dota 2</option>
+          <option value="pubg">PUBG</option>
+          <option value="csgo">CS:GO</option>
+          <option value="minecraft">Minecraft</option>
+          <option value="overwatch">Overwatch</option>
+          <option value="rocket-league">Rocket League</option>
+          <option value="rainbow-six-siege">Rainbow Six Siege</option>
+          <option value="smash-bros">Super Smash Bros.</option>
+          <option value="street-fighter">Street Fighter</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="type" class="form-label text-white">Type</label>
+        <select id="type" class="form-select">
+          <option value="all">All</option>
+          <option value="Solo">Solo</option>
+          <option value="clients">Client</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="select-time" class="form-label text-white">Select time</label>
+        <select id="selectTime" class="form-select">
+          <option value="all">All</option>
+          <option value="today">Today</option>
+          <option value="this week">This Week</option>
+          <option value="this month">This Month</option>
+          <option value="this yearly">This Yearly</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="sort" class="form-label text-white">Sort by</label>
+        <select id="sort" class="form-select">
+          <option value="signup-deadline">Signup Deadline</option>
+        </select>
+      </div>
+      <div class="col">
+        <label for="region" class="form-label text-white">Region</label>
+        <select id="region" class="form-select">
+          <option value="all">All</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4  bg-card">
+          <img src="https://picsum.photos/300/200" class="card-img-top" alt="PSE Weekly Showdown">
+          <div class="card-body">
+            <h5 class="card-title">PSE WEEKLY SHOWDOWN WEEK-2</h5>
+            <p class="card-text">Organizer: PixelScope_Entertainment</p>
+            <p class="card-text">Type: Clans - Single Elimination</p>
+            <p class="card-text">Game: Valorant</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4  bg-card">
+          <img src="https://picsum.photos/300/200" class="card-img-top" alt="The March Valorant Frenzy">
+          <div class="card-body">
+            <h5 class="card-title">The March Valorant Frenzy</h5>
+            <p class="card-text">Organizer: Tektalk4kids</p>
+            <p class="card-text">Type: Clans - Single Elimination</p>
+            <p class="card-text">Game: Valorant</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 bgBlue bg-card">
+          <img src="https://picsum.photos/300/200" class="card-img-top" alt="Fifa Challenge Season 2">
+          <div class="card-body">
+            <h5 class="card-title">Fifa Challenge Season 2</h5>
+            <p class="card-text">Organizer: KombatLink Events</p>
+            <p class="card-text">Type: Solo - Single Elimination</p>
+            <p class="card-text">Game: FIFA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <!-- <script>
+    $(document).ready(function () {
+      $('#organizer').select2({
+        placeholder: 'All',
+        allowClear: true
+      });
+    });
+  </script> -->
+</body>
+
+</html>

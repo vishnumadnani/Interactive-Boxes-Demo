@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d305f;
+    color: #e5e5e5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .headerCard {
+    background-color: #162447;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  .card {
+    background-color: #1e2d49;
+    border: none;
+    color: white;
+  }
+  
+  .card-img-top {
+    border-radius: 0.25rem 0.25rem 0 0;
+  }
+  
+ .form-label, .form-select {
+    color: white;
+    display:flex;
+    margin-top: 5px;
+  } 
+  
+  
+  .form-select:focus {
+    border-color: #1f4068;
+    box-shadow: 0 0 0 0.2rem rgba(31, 64, 104, 0.25);
+  }
+  
+  .bgBlue {
+    background-color: #1e2d49;
+  }
